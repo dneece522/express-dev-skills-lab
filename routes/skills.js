@@ -5,6 +5,9 @@ const router = Router()
 
 /* GET skills listing. */
 router.get('/', skillsCtrl.index)
+router.get('/new', skillsCtrl.new)
+
+router.post('/', skillsCtrl.create)
 
 export {
   router
