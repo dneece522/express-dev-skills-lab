@@ -8,14 +8,13 @@
 </head>
 <body>
   <h1>Skills</h1>
-  <ul>
+  <ol>
     <% skills.forEach(skill => { %>
       <li>
-				<%= skill.text %> <%= skill.language ? 'is' : 'is not' %>
-        a programming language, and we'll learn this in unit <%= skill.unit %>.
+				<a href="/skills/<%= skill._id %>"><%= skill.text %></a> is a skill we will learn at GA.
 			</li>
     <% }) %>
-  </ul>
+  </ol>
   <a href="/skills/new">Add Skill</a>
 </body>
 </html>

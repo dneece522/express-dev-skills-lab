@@ -20,6 +20,7 @@ function newSkill(req, res) {
 function create(req, res) {
   req.body.language = false
   Skill.create(req.body)
+  // Skill.create and .then() should never be seperated (unless it's by a comment)
   .then(skill => {
     res.redirect('/skills')
   })
