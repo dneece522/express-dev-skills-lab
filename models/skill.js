@@ -7,3 +7,9 @@ const skillSchema = new Schema({
   language: Boolean,
   unit: Number
 })
+
+const Skill = mongoose.model('Skill', skillSchema)
+
+export {
+  Skill
+}
