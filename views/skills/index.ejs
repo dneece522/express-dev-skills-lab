@@ -11,9 +11,8 @@
   <ul>
     <% skills.forEach(skill => { %>
       <li>
-				<%= skill.text %> 
-				- 
-				<%= skill.done ? 'done' : 'not done' %>
+				<%= skill.text %> <%= skill.language ? 'is' : 'is not' %>
+        a programming language, and we'll learn this in unit <%= skill.unit %>.
 			</li>
     <% }) %>
   </ul>
